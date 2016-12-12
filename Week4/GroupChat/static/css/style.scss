@@ -1,0 +1,32 @@
+
+#members{
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+  width: 200px;
+  border-right: 1px solid rgb(203, 203, 203);
+}
+#wall{
+  display: inline-block;
+  vertical-align: top;
+  #chat_wall{
+    width: 60%;
+    min-height: 200px;
+    max-height: 600px;
+    overflow: scroll;
+    border-bottom: 1px solid rgb(203, 203, 203);
+    .chat{
+      .author{
+        font-weight: bold;
+      }
+    }
+  }
+  #is_typing{
+    color: rgb(140, 138, 138);
+  }
+  input{
+    display: block;
+    min-width: 400px;
+    font-size: 16px;
+  }
+}

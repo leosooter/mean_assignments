@@ -1,6 +1,8 @@
 $(document).ready(function() {
   console.log("Jquery has loaded");
-
+  var pokeLoaded = false;
+  var pokeArray =[];
+  getPokes();
   var game_info = $('#info');
   var game = {
     players: [],
@@ -37,7 +39,9 @@ $(document).ready(function() {
       }
     },
   };
+  function getPokes(){
 
+  }
   function playerConstructor(name){
     var player = {};
     player.name = name;
